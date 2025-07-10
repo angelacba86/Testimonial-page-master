@@ -13,6 +13,7 @@
         align-content: center;
         font-family: 'Sora', sans-serif;
         color: #52525A;
+        background-color: #FAFAF9;
     }
 
     h1 {
@@ -85,6 +86,7 @@
         margin: 20px 0;
         border-radius: 20px;
         box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+        background-color: #fff;
     }
 
     .card #logo {
@@ -142,7 +144,8 @@
             width: 100%;
             padding: 2%;
         }
-        .reviews{
+
+        .reviews {
             padding-inline: 2%;
         }
 
