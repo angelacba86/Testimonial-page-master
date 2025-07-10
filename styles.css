@@ -1,0 +1,152 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Sora', sans-serif;
+        color: #52525A;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        color: #18181B;
+        margin-bottom: 0;
+    }
+
+    .subtext {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        width: 85%;
+        color: #52525A;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: #18181B;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 300px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding: 5%;
+    }
+
+    .reviews {
+        padding-left: 10%;
+        padding-right: 0;
+    }
+
+    ul {
+        font-size: 0.875rem;
+        list-style: none;
+        padding-left: 0;
+        color: #52525A;
+    }
+
+    li {
+        position: relative;
+        padding-left: 24px;
+        line-height: 30px;
+        white-space: nowrap;
+        align-items: baseline;
+    }
+
+    li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.1rem;
+        width: 20px;
+        height: 20px;
+        background-image: url("./resources/Done_ring_round_fill.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        width: fit-content;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    }
+
+    .card #logo {
+        width: 100px;
+    }
+
+    #google-card {
+        margin-left: 20%;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: left;
+
+    }
+
+    .brand div {
+        margin-left: 20px;
+        align-content: center;
+    }
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5C044;
+        padding: 20px;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        body {
+            flex-direction: column;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .cards {
+            padding: 20%;
+            padding-top: 2%;
+        }
+    }
+
+    @media (max-width: 640px) {
+        body {
+            flex-direction: column;
+        }
+
+        section {
+            width: 100%;
+            padding: 2%;
+        }
+        .reviews{
+            padding-inline: 2%;
+        }
+
+        #google-card {
+            margin-left: 0;
+        }
+    }
